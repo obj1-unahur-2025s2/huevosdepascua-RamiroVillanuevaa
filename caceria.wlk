@@ -30,8 +30,8 @@ object caceria {
         huevosNoEncontrados.forEach({h => self.encontrarHuevoPor(unChico, h)})
     }
 
-    method huevosDeChocoBlancoFaltantes() = huevosNoEncontrados.filter({h => h.esDeChocolateAmargo()}) 
+    method huevosDeChocoBlancoFaltantes() = huevosNoEncontrados.filter({h => h.esDeChocolateBlanco()}) 
 
-    method huevoConMayorCaloriaFaltante() = huevosEncontrados.max({h => h.calorias()}) 
+    method huevoConMayorCaloriaFaltante() = huevosNoEncontrados.max({h => h.calorias()}) 
 
 }
